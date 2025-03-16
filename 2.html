@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scroll To See Something</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <h3>MEDHA</h3>
+    <h2 class="text">KUSHAGR LOVES YOU MORE</h2>
+    <section>
+        <h2 class="innerText">KUSHAGR LOVES YOU MORE</h2>
+    </section>
+    <div class="container2">
+        <h1>YOU ARE ONLY MINE</h1>
+    </div>
+    <div class="tenor-gif-embed" data-postid="17264888133987174267" data-share-method="host" data-aspect-ratio="1.23288"><a href="https://tenor.com/view/peach-goma-gif-17264888133987174267">Peach Goma GIF</a>from <a href="https://tenor.com/search/peach+goma-gifs">Peach Goma GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+<div class="container">
+    <a href="3.html" class="button">
+        <div class="button__content">
+           <span class="button__text">NEXT</span>
+
+           <div class="button__reflection-1"></div>
+           <div class="button__reflection-2"></div>
+        </div>
+
+        <img src="assets/heart.png" alt="" class="button__star-1">
+        <img src="assets/heart.png" alt="" class="button__star-2">
+        <img src="assets/circle.png" alt="" class="button__circle-1">
+        <img src="assets/circle.png" alt="" class="button__circle-2">
+        <img src="assets/heart.png" alt="" class="button__diamond">
+        <img src="assets/heart.png" alt="" class="button__triangle">
+         
+        <div class="button__shadow"></div>
+     </a>
+</div>
+
+
+
+    <script>
+        let section = document.querySelector('section');
+        let text = document.querySelector('.text')
+        let innerText = document.querySelector('.innerText')
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            section.style.clipPath = "circle("+ value +"px at center center)";
+            text.style.left = 100 - value / 5 + '%';
+            innerText.style.left = 100 - value / 5 + '%';
+        })
+    </script>
+</body>
+</html>
